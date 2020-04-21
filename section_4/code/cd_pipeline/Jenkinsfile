@@ -100,7 +100,7 @@ def approve() {
 
 
 def runUnittests() {
-	sh "apt install python3-pip ./section_4/code/cd_pipeline/requirements.txt"
+	sh "pip install --upgrade pip==18.1 -r ./section_4/code/cd_pipeline/requirements.txt"
 	sh "python3 section_4/code/cd_pipeline/tests/test_flask_app.py"
 }
 
